@@ -25,11 +25,14 @@
 
     <div class="ui simple dropdown fitted item">
       <div class="text">MY CART <i class="cart icon"></i> 0 </div>
+
       <i class="dropdown icon"></i>
       <div class="menu">
         <div class="item">My cart is currenty empty</div>
       </div>
     </div>
+    <div class="ui inverted dimmer"></div>
+
   </div>
 </div>
 
@@ -90,7 +93,7 @@
         <div class="item">Store Locations</div>
 
       </div>
-      <hr/>
+      <hr>
     </div>
     <div class="column">
       MAIN MENU
@@ -101,11 +104,12 @@
         <div class="item">Kids</div>
 
       </div>
-      <hr/>
+      <hr>
     </div>
     <div class="column">
       CONNECT
-      <hr/>
+      <hr>
+
       <div class="ui list">
         <div class="ui item">Sign up for the latest updates.</div>
         <div class="ui right labeled input">
@@ -116,16 +120,29 @@
 
         </div>
       </div>
-      <hr/>
+      <hr>
     </div>
 
-  </div>
-</div>
 
+  </div>
+    <div class="ui grid centered whiteicon container">
+      <a class="fitted item"><i class="large facebook f icon"></i></a>
+      <a class="fitted item"><i class="large twitter icon"></i></a>
+      <a class="fitted item"><i class="large pinterest icon"></i></a>
+      <a class="fitted item"><i class="large instagram icon"></i></a>
+
+    </div>
 <script>
   //dropdown
   $('.ui.dropdown')
       .dropdown()
+  ;
+  //dimmer
+  $('.ui.dimmable')
+      .dimmer('show')
+  ;
+  $('.ui.dimmable .dimmer')
+      .dimmer('show')
   ;
 
 </script>
